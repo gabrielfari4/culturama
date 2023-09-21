@@ -6,9 +6,21 @@
     column-gap: 33px;
 }
 
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
 @media (min-width: 720px) {
     .menu {
         column-gap: 75px;
+    }
+
+    .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
     }
 }
 
@@ -37,6 +49,5 @@
     .menu__item:nth-child(5) {
         order: 2;
     }
-
 
 }
